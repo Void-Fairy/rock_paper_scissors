@@ -9,7 +9,7 @@
 
 # Score Computer
   variable _humanScore_ gets defined as 0
-  variable _computerScore
+  variable _computerScore_ gets defined as 0
 
 # Single Round
   function playRound, with the parameters humanChoice, ComputerChoice
@@ -22,4 +22,3 @@
   function playGame runs the entire Game
   make functions and parameter run inside playGame  
   playGame runs playRound 5 times
-
