@@ -1,1 +1,10 @@
-console.log("i like guys & girls & enbies too");
+/*
+ * GENERATE random whole number between 1 and 9
+ */
+let computerChoice
+//variable for following functins
+
+function getComputerChoice() {
+return computerChoice = Math.random() * 10;
+}
+
