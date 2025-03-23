@@ -22,7 +22,6 @@ function getComputerChoice() {
  * ELSE IF case2 RETURN 2
  * ELSE IF case3 RETURN 3
  */
-
 function getHumanChoice() {
   let humanChoice = prompt("Rock, Paper or Scissors?").toLowerCase();
   if (humanChoice == "rock") {
@@ -33,3 +32,10 @@ function getHumanChoice() {
     return 3;
   }
 }
+
+//variables for future use
+let computerScore = 0;
+let humanScore = 0;
+
+console.log(humanScore);
+console.log(computerScore);
