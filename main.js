@@ -5,7 +5,14 @@
  * ELSE IF n < 1 RETURN 3
  */
 function getComputerChoice() {
-return computerChoice = Math.random() * 10;
+  let randomValue = Math.random();
+  if (randomValue < 0.333) {
+    return 1;
+  } else if (randomValue < 0.666) {
+    return 2;
+  } else if (randomValue < 1) {
+    return 3;
+  }
 }
 
 /*
