@@ -37,5 +37,17 @@ function getHumanChoice() {
 let computerScore = 0;
 let humanScore = 0;
 
-console.log(humanScore);
-console.log(computerScore);
+/*
+ * 1x = computerx
+ * 2x = humanx
+ * x1 = rock
+ * x2 = paper
+ * x3 = scissors
+ * CASE 1x = 2x DISPLAY tie
+ * CASE 11 & 22 DISPLAY human wins & INCRIMENT humanScore by 1
+ * CASE 12 & 23 DISPLAY human wins & INCRIMENT humanScore by 1
+ * CASE 13 & 21 DISPLAY human wins & INCRIMENT humanScore by 1
+ * CASE 11 & 23 DISPLAY computer wins & INCRIMENT computerScore by 1
+ * CASE 12 & 21 DISPLAY computer wins & INCRIMENT computerScore by 1
+ * CASE 13 & 12 DISPLAY computer wins & INCRIMENT computerScore by 1
+ */ 
