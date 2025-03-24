@@ -49,5 +49,35 @@ let humanScore = 0;
  * CASE 13 & 21 DISPLAY human wins & INCRIMENT humanScore by 1
  * CASE 11 & 23 DISPLAY computer wins & INCRIMENT computerScore by 1
  * CASE 12 & 21 DISPLAY computer wins & INCRIMENT computerScore by 1
- * CASE 13 & 12 DISPLAY computer wins & INCRIMENT computerScore by 1
+ * CASE 13 & 22 DISPLAY computer wins & INCRIMENT computerScore by 1
  */ 
+
+function playRound(computerChoice = getComputerChoice(), humanChoice = getHumanChoice()) {
+  switch(true) {
+    case computerChoice == humanChoice:
+      console.log("It\'s a tie!");
+    break;
+    case computerChoice == 1 && humanChoice == 2:
+    case computerChoice == 2 && humanChoice == 3:
+    case computerChoice == 3 && humanChoice == 4:
+      console.log("You win!");
+      humanScore++;
+      break;
+    case computerChoice == 1 && humanChoice == 3:
+    case computerChoice == 2 && humanChoice == 1:
+    case computerChoice == 3 && humanChoice == 2:
+      console.log("You lose!");
+      computerScore++;
+      break;
+  }
+}
+/*
+function playGame() {
+  playRound();
+  playRound();
+  playRound();
+  playRound();
+  playRound();
+
+}
+*/
